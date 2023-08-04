@@ -1,0 +1,100 @@
+/*
+Theme Name: RideWrap FAQ Center SASS
+Theme URI: https://www.ridewrap.ca/
+Author: RideWrap
+Author URI: https://www.ridewrap.ca/
+Description: Custom WordPress theme built and managed by RideWrap.
+Version: 1.0.0
+License: Copyright RideWrap
+License URI: https://www.ridewrap.ca/
+Text Domain: ridewrap
+Tags:
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Settings
+# Tools
+# Generic
+# Elements
+# Objects
+# Components
+# Blocks
+# Utilities
+# Trumps
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+@import 'normalize';
+
+/*--------------------------------------------------------------
+# 00-Settings
+--------------------------------------------------------------*/
+
+@import '01-tools/px-to-rem'; // This must be first.
+@import '00-settings/breakpoints';
+@import '00-settings/grid';
+@import '00-settings/colors';
+@import '00-settings/radius';
+@import '00-settings/transitions';
+@import '00-settings/typography';
+@import '00-settings/images';
+
+/*--------------------------------------------------------------
+# 01-Tools
+--------------------------------------------------------------*/
+@import '01-tools/mixin-layout';
+@import '01-tools/animation';
+
+/*--------------------------------------------------------------
+# 02-Generic
+--------------------------------------------------------------*/
+@import '02-generic/box-sizing';
+@import '02-generic/fonts';
+
+/*--------------------------------------------------------------
+# 03-Elements
+--------------------------------------------------------------*/
+@import '03-elements/page';
+@import '03-elements/elements';
+@import '03-elements/headings';
+@import '03-elements/icons';
+@import '03-elements/media';
+@import '03-elements/images';
+@import '03-elements/lists';
+@import '03-elements/links';
+@import '03-elements/tables';
+
+/*--------------------------------------------------------------
+# 04-Objects
+--------------------------------------------------------------*/
+@import '04-objects/grid';
+
+/*--------------------------------------------------------------
+# 05-Components
+--------------------------------------------------------------*/
+@import '05-components/breadcrumbs';
+@import '05-components/result-count';
+@import '05-components/tags';
+@import '05-components/clear-filters';
+@import '05-components/tag-group';
+@import '05-components/faq-item';
+
+/*--------------------------------------------------------------
+# 06-Blocks
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# 07-Utilities
+--------------------------------------------------------------*/
+@import '07-utilities/accessibility';
+@import '07-utilities/alignments';
+@import '07-utilities/typography';
+
+/*--------------------------------------------------------------
+# 08-Libraries
+--------------------------------------------------------------*/

@@ -1,0 +1,39 @@
+{
+  "name": "faq-react-app",
+  "version": "1.0.0",
+  "description": "=== Plugin Name === Contributors: (this should be a list of wordpress.org userid's) Donate link: https://www.ridewrap.com Tags: comments, spam Requires at least: 3.0.1 Tested up to: 3.4 Stable tag: 4.3 License: GPLv2 or later License URI: http://www.gnu.org/licenses/gpl-2.0.html",
+  "main": "public/react-src/index.js",
+  "scripts": {
+    "start": "webpack serve --config config/webpack.prod.js",
+    "build": "webpack --config config/webpack.prod.js",
+    "watch": "webpack --watch config/webpack.prod.js",
+    "test": "jest --watch",
+    "lint": "eslint src tests --fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "preact": "^10.6.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/plugin-transform-runtime": "^7.16.7",
+    "@babel/preset-env": "^7.22.9",
+    "@babel/preset-react": "^7.16.7",
+    "@wordpress/scripts": "^26.8.0",
+    "babel-loader": "^8.2.3",
+    "babel-plugin-import": "^1.13.3",
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "node-sass": "^8.0.0",
+    "sass-loader": "^13.2.2",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.7.2",
+    "webpack-merge": "^5.8.0"
+  }
+}

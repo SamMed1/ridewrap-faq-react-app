@@ -1,0 +1,40 @@
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.rw-app-breadcrumbs {
+    margin-bottom: 60px;
+
+    ul {
+        padding: 0;
+
+        li {
+            color: #a4a4a4;
+            font-weight: 700;
+            font-size: 14px;
+            display: inline;
+            position: relative;
+            padding: 0 8px;
+            text-transform: capitalize;
+
+            &::before {
+                font-family: "Font Awesome 5 Free";
+                content: "\f105";
+                font-size: 12px;
+                position: absolute;
+                display: inline-block;
+                left: -3px;
+                top: 0;
+                height: 15px;
+                width: 15px;
+            }
+
+            &:first-child {
+                padding-left: 0;
+
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+}

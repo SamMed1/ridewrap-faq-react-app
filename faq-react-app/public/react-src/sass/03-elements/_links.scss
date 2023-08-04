@@ -1,0 +1,32 @@
+/* ==========================================================================
+LINKS
+========================================================================== */
+
+a {
+    background-color: transparent;
+}
+
+#content[tabindex="-1"]:focus,
+a:active,
+a:focus,
+a:hover {
+    outline: 0
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
+    color: $color-orange-medium;
+}
+
+a.upcoming {
+    color: $color-black;
+    font-size: .92em;
+    font: $font-body;
+}
+
+.content-area a {
+    color: $color-black;
+}

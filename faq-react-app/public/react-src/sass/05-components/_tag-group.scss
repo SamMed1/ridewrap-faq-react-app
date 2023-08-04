@@ -1,0 +1,30 @@
+/*--------------------------------------------------------------
+# Tag group
+--------------------------------------------------------------*/
+
+// tag design
+.c-tags-filter {
+    width: 100%;
+
+    @media only screen and (min-width: $screen-lg) {
+        width: 20%;
+    }
+}
+
+.c-tag-group {
+    align-content: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+
+    &.c-tag-group-initial-view {
+        border-bottom: 2px solid #8b8b8b;
+        padding-bottom: 30px;
+    }
+
+    &.c-tag-group-associated {
+        @media only screen and (min-width: $screen-lg) {
+            margin-bottom: 45px;
+        }
+    }
+}

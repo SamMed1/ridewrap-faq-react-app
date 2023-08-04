@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+# Clear filters
+--------------------------------------------------------------*/
+.c-clear-filters {
+    height: 25px;
+    cursor: pointer;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    color: #a4a4a4;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #8b8b8b;
+    opacity: 1;
+
+    &.no-border {
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    &:hover {
+        color: #E4E2E2;
+    }
+
+    div { position: relative;
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f00d";
+            display: inline-block;
+            position: absolute;
+            left: 8px;
+            font-size: 10px;
+            top: 2.5px;
+        }
+    }
+}

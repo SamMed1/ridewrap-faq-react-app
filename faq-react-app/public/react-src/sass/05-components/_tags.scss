@@ -1,0 +1,80 @@
+/*--------------------------------------------------------------
+# Tags
+--------------------------------------------------------------*/
+.c-tag-item {
+    cursor: pointer;
+    height: min-content;
+    padding: 6px 14px;
+    position: relative;
+    background-color: #323232;
+    margin: 6px 5px 6px 0;
+    border-radius: 20px;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+        background-color: #C76732;
+        transition: 0.1s ease-in-out;
+    }
+
+    h5 {
+        margin: 0;
+        pointer-events: none;
+        text-transform: capitalize;
+    }
+
+    &.c-tag-item-pinned {
+        background-color: #FF833E;
+        padding-left: 35px;
+        padding-right: 35px;
+        transition: 0.1s ease-in-out;
+
+        &:hover {
+            background-color: #C76732;
+            transition: 0.1s ease-in-out;
+        }
+
+        &::before {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f08d";
+            display: inline-block;
+            position: absolute;
+            left: 15px;
+            transform: rotate(-45deg);
+            font-size: 13px;
+            top: 9px;
+        }
+
+        &::after {
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            content: "\f00d";
+            display: inline-block;
+            position: absolute;
+            right: 12px;
+            // transform: rotate(-45deg);
+            font-size: 11px;
+            top: 9px;
+        }
+    }
+}
+
+.c-filter-helper {
+    padding-bottom: 5px;
+    border-bottom: 2px solid $color-white;
+    margin-top: 17px;
+
+    &.hide {
+        display: none;
+    }
+
+    p {
+        color: $color-white;
+        line-height: 140%;
+
+        i {
+            color: #828282;
+            margin-right: 5px;
+        }
+    }
+}

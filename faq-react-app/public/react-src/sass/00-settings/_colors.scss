@@ -1,0 +1,26 @@
+/* ==========================================================================
+COLORS
+========================================================================== */
+
+// New variables.
+$color-white: #ffffff;
+$color-black: #000000;
+
+$color-grey-dark: #000000;
+$color-grey-medium: #1f1f1f;
+$color-grey-light: #7c7e80;
+$color-grey-panel: #bbbbbb;
+
+$color-orange-dark: #f15638;
+$color-orange-medium: #ff4f31;
+$color-orange-light: #bf493a;
+
+$color-blue-dark: #29a3ac;
+$color-blue-medium: #5bc6d3;
+
+$color-orange-gradient: linear-gradient(45deg, $color-orange-dark 10%, $color-orange-light 70%);
+$color-blue-gradient: linear-gradient(45deg, $color-blue-medium 10%, $color-blue-dark 70%);
+
+$color-outline-grey: #f2f5f4;
+
+$box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);

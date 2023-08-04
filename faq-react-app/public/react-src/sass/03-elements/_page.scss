@@ -1,0 +1,45 @@
+/* ==========================================================================
+PAGE
+========================================================================== */
+
+body {
+	background-color: $color-black;
+	color: $color-white;
+	padding: 0 0 80px 0;
+}
+
+.no-scroll {
+    // height: 100vh;
+    // overflow-y: hidden;
+}
+
+.rw-app-faq {
+    .rw-app-faq-banner {
+        @media only screen and (min-width: $screen-lg) {
+            margin-bottom: 65px;
+        }
+
+        h2,
+        h3 {
+            color: $color-white;
+            font-style: italic;
+            line-height: 140%;
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.c-result-wrapper {
+    width: 100%;
+    margin-top: 10px;
+
+    @media only screen and (min-width: $screen-lg) {
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 0;
+    }
+}

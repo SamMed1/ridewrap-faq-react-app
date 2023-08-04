@@ -1,0 +1,80 @@
+/* ==========================================================================
+GRID
+========================================================================== */
+
+.container {
+    height: 100%;
+    width: 100%;
+    max-width: $container-width-wide;
+    margin: 0 auto;
+    padding: 0 $gutter-width-single;
+
+    @media only screen and (min-width: $screen-xl) {
+        padding: 0 $gutter-width-double;
+    }
+}
+
+.container-narrow {
+    height: 100%;
+    width: 100%;
+    max-width: $container-width-narrow;
+    margin: 0 auto;
+    padding: 0 $gutter-width-single;
+
+    @media only screen and (min-width: $screen-xl) {
+        padding: 0 $gutter-width-double;
+    }
+}
+
+.container-wide {
+    height: 100%;
+    width: 100%;
+    max-width: $container-width-xl;
+    margin: 0 auto;
+    padding: 0 $gutter-width-double;
+
+    @media only screen and (min-width: $screen-xl) {
+        padding: 0 $gutter-width-double;
+    }
+}
+
+.container-flex-int {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-flow: row wrap;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -ms-flex: 0 0 100%;
+    -webkit-flex: 0 0 100%;
+    flex: 0 0 100%;
+    margin: 0 auto;
+}
+
+.container-flex-wrap {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    @media only screen and (min-width: $screen-lg) {
+        flex-direction: row;
+    }
+}
+
+.container-negative {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
